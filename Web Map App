@@ -1,0 +1,11 @@
+require(["esri/views/MapView", "esri/Map"], (MapView, Map) => {
+  const map = new Map({
+    portalItem: {
+      id: "https://trnesri.maps.arcgis.com/home/item.html?id=bbeb9e9b1ba24764a0f8e6b7d68d0562#overview"
+    }
+  });
+  const view = new MapView({
+    container: "viewDiv",
+    map: map
+  });
+});
